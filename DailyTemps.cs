@@ -36,7 +36,7 @@ class DailyTemps
                 // Try to convert user input into a number
                 if (!float.TryParse(userInput, out float temp))
                 {
-                    Console.WriteLine("❌ Invalid number, please try again!");
+                    Console.WriteLine("Invalid number, please try again!");
                     continue; // Ask again
                 }
 
@@ -48,7 +48,7 @@ class DailyTemps
                 }
                 else
                 {
-                    Console.WriteLine("⚠️ Temperature must be between -20 and 130 Fahrenheit.");
+                    Console.WriteLine("Temperature must be between -20 and 130 Fahrenheit.");
                 }
 
             } while (true);
@@ -73,4 +73,5 @@ class DailyTemps
             Console.WriteLine($"Unexpected error: {ex.Message}");
         }
     }
+
 }
